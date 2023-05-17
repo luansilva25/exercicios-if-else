@@ -1,0 +1,31 @@
+<script>
+    //Problema: Situação do aluno
+    //Peça para o aluno informar as notas que obteve nos três trimestres. Calcule a média e apresente a seguinte mensagem:
+    //- Se a média for menor que 4: Reprovado
+    //- Se a média for maior ou igual a 4 e menor que 6: Exame
+    //- Se a média for maior ou igual a 6: Aprovado
+
+    //ENTRADA
+    const nota1= Number(prompt('informe a nota obtida pelo aluno').replace(',','.').trim().toLowerCase())
+    const nota2= Number(prompt('informe a nota obtida pelo aluno').replace(',','.').trim().toLowerCase())
+    const nota3= Number(prompt('informe a nota obtida pelo aluno').replace(',','.').trim().toLowerCase())
+
+
+    //PROCESSAMENTO
+    const media= Number(nota1 + nota2 + nota3)/3
+    if (media < 4){
+        alert("o aluno foi reprovado")
+    }
+    else if( media >= 4 && media < 6){
+        alert('o aluno ficou em exame')
+    }
+    else{
+        alert('o aluno foi aprovado')
+    }
+
+
+
+    //SAÍDA
+    document.write(`a média do aluno foi de ${media}`)
+
+</script>
